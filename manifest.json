@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "dアニメマイページタイム",
+  "description": "dアニメストアのマイページの続きから見るのページに、最新話の更新曜日と時間を表示する拡張機能です。",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://anime.dmkt-sp.jp/animestore/mp_viw_pc"],
+      "js": ["content.js"]
+    }
+  ]
+}
